@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b0d10;
+  --bg-elevated: #13171d;
+  --ink: #ece7dc;
+  --muted: #9b958a;
+  --line: rgba(236, 231, 220, 0.12);
+  --accent: #d7a35a;
+  --accent-soft: rgba(215, 163, 90, 0.16);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-ibm-sans);
+  --font-display: var(--font-instrument);
+  --font-mono: var(--font-ibm-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 20%, transparent 75%);
+}
