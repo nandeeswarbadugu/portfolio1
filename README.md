@@ -2,7 +2,7 @@
 
 Personal site for [Nandeeswar Badugu](https://github.com/nandeeswarbadugu): infrastructure, DevOps/SRE, platform engineering, and HPC/MLOps.
 
-The site is a static Next.js export for GitHub Pages on the custom domain [nandeeswar.dev](https://nandeeswar.dev).
+The site is a static Next.js export for GitHub Pages on the custom domain [nandeeswar.dev](https://nandeeswar.xyz).
 
 ## Run locally
 
